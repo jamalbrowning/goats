@@ -1,0 +1,9 @@
+.card {
+  width: 18rem;
+  margin: 10px;
+}
+.card-container {
+  display: flex;
+  justify-content: space-evenly;
+  flex-flow: column;
+}
