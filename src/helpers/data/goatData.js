@@ -20,7 +20,7 @@ const goats = [
     name: 'Vincent van Goat',
     age: 18,
     description: 'SHHHHHHH',
-    imgUrl: 'https://goatyoga.com/wp-content/uploads/goat-yoga-goat-in-pink-tutu-with-unicorn-horn.jpg',
+    imgUrl: 'https://images.unsplash.com/photo-1573578160998-4f4c7b023aec?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&w=1000&q=80',
     isBusy: false,
   },
   {
@@ -42,5 +42,13 @@ const goats = [
 ];
 
 const getGoats = () => goats;
+// THIS IS TO CHANGE DATE
+const takeGoat = (goatId) => {
+  goats.forEach((response) => {
+    if (response.id === goatId) {
+      response.isBusy = true;
+    }
+  });
+};
 
-export default { getGoats };
+export default { getGoats, takeGoat };
